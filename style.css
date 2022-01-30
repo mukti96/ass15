@@ -1,0 +1,131 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+
+
+/*** start clock ***/
+.clock{
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    margin: 100px auto;
+    background-image: url('./assets/images/clock.jpg');
+    background-size: 130% 130%;
+    background-position: center center;
+    border-radius: 50%;
+    border: 20px solid rgb(209, 12, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.s{
+    width: 0;
+    height: 272px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(0deg);
+}
+
+.s::before{
+    content: "";
+    width: 4px;
+    height: 162px;
+    background-color: black;
+    position: absolute;
+}
+
+.m{
+    width: 0;
+    height: 242px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(45deg);
+}
+
+.m::before{
+    content: "";
+    width: 7px;
+    height: 148px;
+    background-color: rgb(221, 35, 35);
+    position: absolute;
+}
+
+.h{
+    width: 0;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(60deg);
+}
+
+.h::before{
+    content: "";
+    width: 9px;
+    height: 128px;
+    background-color: rgb(18, 30, 199);
+    position: absolute;
+}
+/*** end clock ***/
+
+
+
+/*** start calculator***/
+.cal{
+    width: 350px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.monitor{
+    min-height: 100px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    text-align: right;
+}
+
+.main-monitor{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.top-monitor{
+    font-size: 25px;
+}
+
+button{
+    width: 23.8%;
+    float: left;
+    margin: 2px;
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: 0px 2px 3px rgb(26, 23, 23);
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: #fff;
+    transition: .3s;
+}
+
+/*** end calculator***/

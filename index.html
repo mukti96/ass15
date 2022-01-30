@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+  <!-- start checkbox -->
+<div class="container">
+    <div class="row">
+      <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+          <div class="ass">
+          </div>
+            <div class="card my-5">
+              <h3 class="assi px-3 py-3 bg-primary">Assignment 1</h3>
+                <div class="card-body">
+                    <input type="checkbox" class="skill" value="php" id="php"><label for="php">php</label><br>
+                    <input type="checkbox" class="skill" value="wordpress" id="wordpress"><label for="wordpress">wordpress</label><br>
+                    <input type="checkbox" class="skill" value="phython" id="phython"><label for="phython">phython</label><br>
+                    <input type="checkbox" class="skill" value="c++" id="c++"><label for="c++">C++</label><br>
+                    <input type="checkbox" class="skill" value="joomla" id="joomla"><label for="joomla">joomla</label><br>
+                    
+                    <ul class="list-group all-skills">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</div>
+<!-- end checkbox -->
+
+<hr>
+
+<!-- start clock -->
+<div class="clock shadow">
+  <div class="h"></div>
+  <div class="m"></div>
+  <div class="s"></div>
+</div>
+<!-- end clock -->
+
+<hr>
+
+<!-- start calculator -->
+<div class="cal shadow">
+  <div class="monitor">
+    <div class="top-monitor"></div>
+    <div class="main-monitor">0</div>
+  </div>
+  <div class="buttons">
+    <button style="width:48.6%;" onclick="allClear()">AC</button>
+    <button style="width:48.6%;" onclick="back()">C</button>
+    <button onclick="valGet(7)">7</button>
+    <button onclick="valGet(8)">8</button>
+    <button onclick="valGet(9)">9</button>
+    <button onclick="valGet('/')">/</button>
+    <button onclick="valGet(4)">4</button>
+    <button onclick="valGet(5)">5</button>
+    <button onclick="valGet(6)">6</button>
+    <button onclick="valGet('*')">*</button>
+    <button onclick="valGet(1)">1</button>
+    <button onclick="valGet(2)">2</button>
+    <button onclick="valGet(3)">3</button>
+    <button onclick="valGet('+')">+</button>
+    <button onclick="valGet(0)">0</button>
+    <button onclick="valGet('.')">.</button>
+    <button onclick="finalRes()">=</button>
+    <button onclick="valGet('-')">-</button>
+  </div>
+</div>
+<!-- end calculator -->
+
+
+
+
+
+
+
+
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./functions.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
